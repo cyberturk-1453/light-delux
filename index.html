@@ -1,62 +1,192 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="de">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Light Delux</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
 body{
-    font-family: Arial, sans-serif;
-    margin:0;
-    background:#f5f5f5;
-    text-align:center;
+background:#f5f5f5;
 }
+
 .header{
-    background:#4f76c7;
-    color:white;
-    padding:40px 20px;
+background:#5878c7;
+height:220px;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+font-size:42px;
+font-weight:bold;
 }
+
 .card{
-    background:white;
-    max-width:600px;
-    margin:20px auto;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+background:white;
+width:95%;
+max-width:700px;
+margin:-40px auto 20px;
+border-radius:12px;
+padding:18px;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
 }
-img{
-    max-width:100%;
-    border-radius:8px;
+
+.logo{
+width:100%;
+border-radius:8px;
 }
-.info{
-    text-align:left;
-    margin-top:15px;
+
+h2{
+text-align:center;
+margin:20px 0 15px;
+font-size:34px;
+}
+
+.desc{
+text-align:center;
+color:#555;
+line-height:1.6;
+margin-bottom:20px;
+}
+
+.box{
+background:white;
+width:95%;
+max-width:700px;
+margin:20px auto;
+padding:20px;
+border-radius:12px;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.box h3{
+margin-bottom:15px;
+font-size:28px;
+}
+
+.row{
+display:flex;
+justify-content:space-between;
+padding:12px 0;
+border-bottom:1px solid #eee;
+}
+
+.contact p{
+padding:12px 0;
+border-bottom:1px solid #eee;
+}
+
+a{
+color:#3b6cff;
+text-decoration:none;
+}
+
+.insta{
+display:block;
+background:white;
+padding:20px;
+border-radius:12px;
+width:95%;
+max-width:700px;
+margin:20px auto;
+box-shadow:0 2px 12px rgba(0,0,0,.08);
+font-size:24px;
+}
+
+.about{
+text-align:center;
+line-height:1.7;
+color:#444;
+}
+
+.footer{
+height:50px;
 }
 </style>
 </head>
+
 <body>
 
 <div class="header">
-    <h1>Light Delux</h1>
+Light Delux
 </div>
 
 <div class="card">
-    <img src="Logo.jpg" alt="Logo">
 
-    <h2>Antike Kronleuchter</h2>
+<img src="Logo.jpg" class="logo">
 
-    <p>
-        Wir sind ein kleines Unternehmen, das sich ausschließlich
-        mit Kronleuchtern handelt.
-    </p>
+<h2>Antike Kronleuchter</h2>
 
-    <div class="info">
-        <p><strong>Telefon:</strong> +49 173 2372411</p>
-        <p><strong>E-Mail:</strong> info@light-delux.com</p>
-        <p><strong>Website:</strong> www.light-delux.com</p>
-        <p><strong>Adres:</strong> Berlin, Germany</p>
-    </div>
+<p class="desc">
+Wir sind ein kleines Unternehmen,
+das sich ausschließlich mit Kronleuchtern
+vielfältigster Art arbeitet und handelt.
+</p>
+
 </div>
+
+<div class="box">
+<h3>Open Hours</h3>
+
+<div class="row"><span>Pazartesi</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Salı</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Çarşamba</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Perşembe</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Cuma</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Cumartesi</span><span>13:00 - 18:00</span></div>
+<div class="row"><span>Pazar</span><span>Kapalı</span></div>
+</div>
+
+<div class="box">
+<h3>Address</h3>
+
+<p>
+Gitschiner Straße,<br>
+Berlin 10969, BE, Almanya
+</p>
+
+<br>
+
+<a href="https://maps.google.com/?q=Gitschiner+Straße+Berlin+10969">
+Show on Map
+</a>
+
+</div>
+
+<a class="insta" href="https://instagram.com/light-delux">
+📸 Instagram - light-delux
+</a>
+
+<div class="box contact">
+<h3>Contact</h3>
+
+<p><b>Name:</b> Erkan Tahta</p>
+<p><b>Phone:</b> +49 173 2372411</p>
+<p><b>Email:</b> info@light-delux.com</p>
+<p><b>Website:</b> www.light-delux.com</p>
+
+</div>
+
+<div class="box">
+<h3>About the Company</h3>
+
+<p class="about">
+Schwerpunkte unserer Arbeit sind die
+Instandsetzung und Aufbereitung
+gebrauchter Kronleuchter
+jeglichen Alters und Zustandes.
+</p>
+
+</div>
+
+<div class="footer"></div>
 
 </body>
 </html>
